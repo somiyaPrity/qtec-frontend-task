@@ -5,6 +5,9 @@ body {
   background-color: #fff;
   margin: 0;
 }
+main {
+  margin: 0;
+}
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -161,6 +164,11 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.search-field {
+  width: 590px;
+  height: 46px;
+  position: relative;
+}
 form.example input {
   width: 590px;
   height: 46px;
@@ -174,7 +182,6 @@ form.example input {
   border: 1px solid #e96125;
   box-sizing: border-box;
   border-radius: 27px;
-  position: relative;
 }
 
 form.example button {
@@ -188,8 +195,8 @@ form.example button {
   border-radius: 0px 27px 27px 0px;
   cursor: pointer;
   position: absolute;
-  top: 117px;
-  right: 258px;
+  top: 1px;
+  right: 1px;
 }
 .cart,
 .user-account {
@@ -369,7 +376,7 @@ form.example button {
   box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.05);
 }
 .cart-header {
-  width: 96%;
+  width: 95%;
   background: #e96125;
   padding: 10px 0 10px 17px;
 }
@@ -386,7 +393,7 @@ form.example button {
   font-size: 16px;
 }
 .product {
-  width: 93%;
+  width: 92%;
   padding: 10px 9px 10px 17px;
   display: flex;
   justify-content: space-between;
@@ -483,4 +490,423 @@ form.example button {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+
+/* ===========
+responsive css
+============== */
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 260px;
+  }
+
+  .header-part {
+    flex-direction: column;
+  }
+  .delivery-number i,
+  p {
+    font-size: 12px;
+  }
+  .faq-div p {
+    font-size: 12px;
+  }
+  .delivery-number {
+    width: 238px;
+  }
+  .delivery-number,
+  .faq-div {
+    margin-left: 10px;
+  }
+  .faq-div {
+    width: 179px;
+  }
+
+  .main-body {
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+  }
+  .logo-toggle {
+    width: 205px;
+    box-shadow: none;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .services ul li a {
+    font-size: 14px;
+  }
+  .services ul li a div {
+    margin: 0 56px 0 13px;
+  }
+
+  .nav-bar {
+    width: 205px;
+    height: 220px;
+  }
+  .menu-part {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .menu {
+    text-align: center;
+  }
+
+  .menu ul li a {
+    margin-right: 4px;
+    align-items: center;
+  }
+
+  .searching-part {
+    flex-direction: column;
+  }
+  .search-field {
+    width: 247px;
+  }
+  form.example input {
+    width: 247px;
+    font-size: 11px;
+  }
+  form.example button {
+    width: 39px;
+    top: 1px;
+    right: 0px;
+  }
+  .cart {
+    margin-top: 10px;
+  }
+
+  .check-out {
+    width: 83%;
+  }
+  .checkout-cart {
+    flex-direction: column;
+  }
+  .small-header-content p {
+    font-size: 10px;
+  }
+  .delivery-address,
+  .delivery-time {
+    width: 95%;
+  }
+  .time-date {
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-picker {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .checkout-detail {
+    width: 90%;
+  }
+  .checkout-btn {
+    font-size: 10px;
+  }
+
+  .my-cart {
+    width: 99%;
+  }
+  .cart-header,
+  .total-price {
+    width: 93%;
+  }
+  .offer-code {
+    width: 87%;
+  }
+  .product {
+    width: 90%;
+  }
+  .name h4 {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
+
+  .header-part {
+    flex-direction: column;
+  }
+  .delivery-number i,
+  p {
+    font-size: 12px;
+  }
+  .faq-div p {
+    font-size: 12px;
+  }
+  .delivery-number {
+    width: 238px;
+  }
+  .delivery-number,
+  .faq-div {
+    margin-left: 10px;
+  }
+  .faq-div {
+    width: 179px;
+  }
+
+  .main-body {
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+  }
+  .logo-toggle {
+    width: 247px;
+    box-shadow: none;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .services ul li a {
+    font-size: 14px;
+  }
+  .services ul li a div {
+    margin: 0 60px 0 13px;
+  }
+
+  .nav-bar {
+    width: 247px;
+    height: 220px;
+  }
+  .menu-part {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .menu {
+    text-align: center;
+  }
+
+  .menu ul li a {
+    margin-right: 4px;
+    align-items: center;
+  }
+
+  .searching-part {
+    flex-direction: column;
+  }
+  .search-field {
+    width: 247px;
+  }
+  form.example input {
+    width: 247px;
+    font-size: 11px;
+  }
+  form.example button {
+    width: 39px;
+    top: 1px;
+    right: 0px;
+  }
+  .cart {
+    margin-top: 10px;
+  }
+
+  .check-out {
+    width: 83%;
+  }
+  .checkout-cart {
+    flex-direction: column;
+  }
+  .delivery-address,
+  .delivery-time {
+    width: 95%;
+  }
+  .time-date {
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-picker {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .checkout-detail {
+    width: 90%;
+  }
+  .checkout-btn {
+    font-size: 12px;
+  }
+
+  .my-cart {
+    width: 99%;
+  }
+  .cart-header,
+  .total-price {
+    width: 93%;
+  }
+  .offer-code {
+    width: 87%;
+  }
+  .product {
+    width: 90%;
+  }
+  .name h4 {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 400px;
+  }
+
+  .header-part {
+    flex-direction: column;
+  }
+  .delivery-number i,
+  p {
+    font-size: 12px;
+  }
+  .faq-div p {
+    font-size: 12px;
+  }
+  .delivery-number {
+    width: 238px;
+  }
+  .delivery-number,
+  .faq-div {
+    margin-left: 10px;
+  }
+  .faq-div {
+    width: 179px;
+  }
+
+  .main-body {
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+  }
+  .logo-toggle {
+    width: 320px;
+    box-shadow: none;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .services ul li a div {
+    margin: 0 104px 0 48px;
+  }
+
+  .nav-bar {
+    width: 355px;
+    height: 220px;
+  }
+  .menu-part {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .menu {
+    text-align: center;
+  }
+
+  .menu ul li a {
+    margin-right: 4px;
+    align-items: center;
+  }
+
+  .searching-part {
+    flex-direction: column;
+  }
+  .search-field {
+    width: 183px;
+  }
+  form.example input {
+    width: 180px;
+    font-size: 11px;
+  }
+  form.example button {
+    width: 39px;
+    top: 1px;
+    right: 3px;
+  }
+  .cart {
+    margin-top: 10px;
+  }
+
+  .check-out {
+    width: 88%;
+  }
+  .checkout-cart {
+    flex-direction: column;
+  }
+  .delivery-address,
+  .delivery-time {
+    width: 95%;
+  }
+  .time-date {
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-picker {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .checkout-detail {
+    width: 90%;
+  }
+  .checkout-btn {
+    font-size: 12px;
+  }
+
+  .my-cart {
+    width: 91%;
+  }
+  .cart-header,
+  .offer-code,
+  .total-price {
+    width: 100%;
+  }
+  .product {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 660px;
+  }
+
+  .main-body {
+    flex-direction: column;
+  }
+  .logo-toggle {
+    margin: 0 auto;
+  }
+  .nav-bar {
+    width: 600px;
+  }
+  .menu-part {
+    justify-content: center;
+  }
+  .searching-part {
+    justify-content: center;
+  }
+  .search-field {
+    margin-right: 8px;
+  }
+  .cart {
+    margin-left: 62px;
+    margin-right: 12px;
+  }
+  form.example input {
+    width: 365px;
+  }
+  form.example button {
+    top: 633px;
+    right: 305px;
+  }
+  .offer-code {
+    width: 256px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+@media only screen and (min-width: 1201px) {
 }
